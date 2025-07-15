@@ -9,7 +9,7 @@
 
 ## 🚀 Getting Started
 
-**Play the game here:** [Deployed Game Link]()
+**Play the game here:** [Hangman-77](https://am-973.github.io/hangman-77/)
 
 **Project Planning Materials:**  
 - [Wireframes](https://trello.com/c/GlYEykgh/2-wireframe-part-1)  
@@ -30,7 +30,7 @@
 
 ## 📚 Attributions
 
-- [Library or asset name](https://getbootstrap.com/docs/4.0) - for [some CSS elements]
+- [Bootstrap components](https://getbootstrap.com/docs/4.0) - for [some of the CSS elements]
 
 
 ## 🚧 Next Steps
