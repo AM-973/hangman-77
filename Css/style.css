@@ -1,78 +1,135 @@
-
-/* All */
-
-*{
-  font-family: "roboto Slab", serif;
-  font-optical-sizing: auto;
-  box-sizing: content-box;
-}
-
-/* Fonts */
-.roboto-slab-h1 {
-  font-weight: 600;
-  font-style: normal;
-}
-
-
-.roboto-slab-h2 {
+#start-btn {
+  background-color: rgb(226, 0, 0);
+  border: none;
+  color: #fff;
   font-weight: 500;
-  font-style: normal;
+}
+#start-btn:hover {
+  opacity: 0.9;
 }
 
-.roboto-slab-h3 {
-  font-weight: 400;
-  font-style: normal;
+#word-container {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-/* Body */
-
-.square-container {
+#letters-container {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+#letters-container button {
+  width: 3rem;
+  height: 3rem;
+  background-color: #fff;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+#letters-container button:hover:not(:disabled) {
+  background-color: rgb(75, 75, 71);
+  color: #fff;
+}
+#letters-container button:disabled {
+  background-color: #e0e0e0;
+  border-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
+/* popup container */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  z-index: 1000;
 }
 
-
-li {
-  list-style: boxed;
+.popup.hidden {
+  display: none;
 }
 
-/* Footer */
-
-
-footer{
-  display:flex;
-  flex-direction:column;
-  align-items: left;
-  justify-content: left;
+.popup-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
 }
 
-footer p{
-  display:flex;
-  margin: 0;
-  padding: 0; 
-  align-items: left;
-  justify-content: left;
-  font-size: 0.8rem;
+#popup-message {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-footer span {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  z-index: 1;
+.hidden {
+  display: none !important;
+}
+/* popup container */
+/* hangman figure */
+#figure-container {
   position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 1rem auto;
 }
 
-footer img {
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: left;
-  z-index: 1;
-  position: relative;
-  right: 75px;
+.part {
+  position: absolute;
+  width: 60px;
+  height: auto;
+  display: block;
+}
+
+#hangman-container {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+/* hangman figure */
+/* hangman parts all */
+#hangman-head {
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#hangman-body {
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#hangman-right-arm {
+  top: 28%;
+  left: 62%;
+  transform: translate(-50%, 0);
+}
+
+#hangman-left-arm {
+  top: 28%;
+  left: 38%;
+  transform: translate(-50%, 0);
+}
+
+#hangman-right-leg {
+  top: 50%;
+  left: 62%;
+  transform: translate(-50%, 0);
+}
+
+#hangman-left-leg {
+  top: 50%;
+  left: 38%;
+  transform: translate(-50%, 0);
 }

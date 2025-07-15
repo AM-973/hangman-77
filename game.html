@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman‑77</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container text-center mt-5 p-4 rounded" style="background-color: rgb(234, 236, 245);">
+        <button id="start-btn" class="btn btn-primary mb-4">Restart</button>
+        <div id="word-container" class="roboto-slab-h2 mb-3"></div>
+        <div id="letters-container" class="mb-3"></div>
+        <div id="hangman-container" class="roboto-slab-h3 mb-3"></div>
+        <div id="figure-container" class="mb-3">
+            <img src="images/hangman-parts/hangmanhead.png" id="hangman-head" class="hidden part" alt="Head">
+            <img src="images/hangman-parts/hangmanbody.png" id="hangman-body" class="hidden part" alt="Body">
+            <img src="images/hangman-parts/hangman-rightarm.png" id="hangman-right-arm" class="hidden part"
+                alt="Right Arm">
+            <img src="images/hangman-parts/hangman-leftarm.png" id="hangman-left-arm" class="hidden part"
+                alt="Left Arm">
+            <img src="images/hangman-parts/hangman-rightleg.png" id="hangman-right-leg" class="hidden part"
+                alt="Right Leg">
+            <img src="images/hangman-parts/hangman-leftleg.png" id="hangman-left-leg" class="hidden part"
+                alt="Left Leg">
+        </div>
+        <div id="popup" class="popup hidden">
+            <div class="popup-content">
+                <p id="popup-message"></p>
+                <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+            </div>
+        </div>
+        <a href="index.html" class="btn btn-primary">Home</a>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
+<!-- formatted with the format button -->
