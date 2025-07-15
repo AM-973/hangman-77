@@ -1,4 +1,4 @@
-# 🎮 hangman game -77
+# 🎮 hangman game - 77
 
 ![Screenshot or Logo](/images/logo.svg)
 
