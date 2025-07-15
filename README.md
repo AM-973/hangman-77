@@ -19,7 +19,8 @@
 **Instructions to play:**
 1. Open the game using the link above.
 2. Click on the question mark to learn how to play in more detail or a general overview on the game.
-3. click the buttons on the screen to guess the word!
+3. Click the buttons on the screen to guess the word!
+4. You only have 6 letter guesses to win make them count!
 
 ## 💡 Technologies Used
 
@@ -39,4 +40,4 @@
 - Create a leaderboard using localStorage or a database
 - Add win & lose animations and sound effects
 - Make it more mobile-friendly
-- increase CSS
+- increase amount CSS components 
